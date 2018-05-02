@@ -15,7 +15,7 @@ function NN(){
     //Create our neural network... 16 input, 2 neurons in hidden layer and 4 output 
     this.neuvol = new Neuroevolution({
         population:POPULATION ,
-        network:[3, [2], 1],
+        network:[4, [2], 1],
         // randomBehaviour:0.1,
         // mutationRate:0.5, 
         // mutationRange:0.5,    
@@ -55,6 +55,7 @@ NN.prototype.initializePlayers = function(){
 
 NN.prototype.startGame = function(){
     this.gen = this.neuvol.nextGeneration();
+    this.generation++;
     self = this;
     for(let i=0; i<POPULATION;i++){
         let trex =self.players[i];
@@ -83,6 +84,7 @@ NN.prototype.updateRex = function(trex, index){
         if(score>this.best_score){
             this.best_score = score;
             document.getElementById("best_score").innerHTML = "Best score:"+ this.best_score;
+            document.getElementById("generation_show").innerHTML = "Generation:"+ this.generation;
         }
         this.verifyAllDead();
     }else{
