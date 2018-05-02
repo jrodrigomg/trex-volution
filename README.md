@@ -8,5 +8,11 @@ This was made thanks to the following projects:
 * __T-Rex__:To stablish some ideas to interact with the program https://github.com/amaneureka/T-Rex 
 
 
-##TODO
+
+### TODO
 * Demo
+
+
+### Preview
+![TREX](https://media.giphy.com/media/1euMELKIxMUQlEZB5G/giphy.gif)
+
