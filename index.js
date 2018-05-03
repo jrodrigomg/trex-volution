@@ -321,7 +321,8 @@
         loadSounds: function () {
             console.log("flag")
             //FLAG1
-            if (!IS_IOS && navigator.appCodeName ==="Mozilla") {
+            var vendorGoogle =  !navigator.vendor.includes("Google");
+            if (!IS_IOS && vendorGoogle) {
                 this.audioContext = new AudioContext();
 
                 var resourceTemplate =
