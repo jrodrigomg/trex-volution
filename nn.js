@@ -1,7 +1,9 @@
 
 
 function onDocumentLoad() {
-    let nn = new NN();
+    setTimeout(()=>{
+        let nn = new NN();
+    }, 3000);
 }
 
 document.addEventListener('DOMContentLoaded', onDocumentLoad);
