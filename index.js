@@ -15,7 +15,7 @@
         // Singleton
 
         this.index = index;
-
+        this.f_crashed = false;
         this.outerContainerEl = document.getElementsByClassName(outerContainerId)[0];
         this.containerEl = null;
         this.snackbarEl = null;
